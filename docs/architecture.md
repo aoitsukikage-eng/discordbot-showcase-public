@@ -4,6 +4,7 @@
 
 This project runs multiple Discord bots (`bot1`, `bot2`, `bot3`) with separate behavior and memory namespaces.
 All AI calls are routed through a shared Engine adapter contract.
+The goal is to support iterative learning and experimentation in a real chat environment.
 
 ## Components
 
@@ -36,3 +37,4 @@ This prevents cross-bot memory contamination and supports multi-persona deployme
 
 Runtime is managed by `systemd --user` service units, one per bot.
 Each service can be configured with auto-restart and independent working directory.
+This setup is used for technical practice and operational learning.

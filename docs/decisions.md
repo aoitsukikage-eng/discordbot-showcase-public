@@ -6,12 +6,12 @@ Status: accepted
 
 Reason:
 
-- Engine is reused across projects.
+- Engine is reused across personal learning projects.
 - It contains sensitive and provider-specific key handling logic.
 
 Tradeoff:
 
-- External contributors cannot run full production behavior.
+- External contributors cannot run full private behavior.
 - Mitigated by publishing adapter contract and stubs.
 
 ## D-002: Multi-Bot Namespace Isolation
@@ -32,7 +32,7 @@ Status: accepted
 
 Reason:
 
-- Simple and stable always-on process management on Ubuntu.
+- Simple and stable process management on Ubuntu for ongoing experiments.
 
 Tradeoff:
 
@@ -49,4 +49,4 @@ Reason:
 
 Tradeoff:
 
-- Extra maintenance to keep showcase docs aligned with production reality.
+- Extra maintenance to keep showcase docs aligned with actual learning progress.

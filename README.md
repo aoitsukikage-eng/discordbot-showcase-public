@@ -2,21 +2,25 @@
 
 A public showcase version of my multi-bot Discord project.
 
+This repository is focused on learning, experimentation, and technical demonstration.
+It is not a commercial product.
+
 This repository intentionally exposes the application layer and architecture, while keeping the private `Engine` implementation out of scope.
 
 ## Why This Repo Exists
 
-- Demonstrate system design and operational thinking for AI-powered Discord bots.
-- Show how one private Engine can be reused across multiple bot personas.
-- Provide enough reproducible structure for reviewers and portfolio readers.
+- Practice AI bot architecture through real Discord interactions.
+- Test new ideas safely in an entertainment-oriented project.
+- Show how one private Engine interface can be reused across different bot personas.
+- Keep a clean portfolio record of technical growth.
 
 ## Project Highlights
 
 - Multi-bot architecture (`bot1`, `bot2`, `bot3`) with isolated memory namespaces.
 - Unified AI call flow through an Engine adapter (private Engine not published).
-- Production-oriented deployment via `systemd --user`.
 - Context strategy: user-turn memory + recent channel context.
 - Guardrails for role identity and prompt contamination.
+- Clear public/private boundary so the showcase is safe to publish.
 
 ## Public/Private Boundary
 
@@ -74,7 +78,7 @@ discordbot-showcase-public/
     └── test_engine_adapter.py
 ```
 
-## What Reviewers Should Read First
+## What To Read First
 
 1. `SHOWCASE_BRIEF.md`
 2. `docs/architecture.md`
@@ -89,4 +93,3 @@ The following files are intentionally structured for direct transformation into 
 - `METRICS.md`
 - `DEMO_SCRIPT.md`
 - `docs/decisions.md`
-

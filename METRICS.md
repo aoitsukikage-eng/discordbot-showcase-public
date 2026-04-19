@@ -1,34 +1,34 @@
 # Metrics
 
-Use this file as the source-of-truth for portfolio metrics.
-Replace placeholders with real numbers before publishing.
+Use this file as the source-of-truth for learning and experimentation metrics.
+This project is non-commercial, so metrics should focus on technical growth and stability of experiments.
 
-## Scale
+## Activity
 
 - Number of deployed bots: `3`
-- Number of active servers: `<fill>`
-- Number of active channels: `<fill>`
+- Number of test servers used: `<fill>`
+- Number of active test channels: `<fill>`
 
-## Usage
+## Experiment Iteration
 
-- Average daily messages handled: `<fill>`
-- Slash command usage per day: `<fill>`
-- Mention-based interactions per day: `<fill>`
+- Number of prompt/persona revisions: `<fill>`
+- Number of new command experiments: `<fill>`
+- Number of context-strategy experiments: `<fill>`
 
-## Reliability
+## Runtime Stability
 
-- Uptime (last 30 days): `<fill>%`
-- Crash-restart count (last 30 days): `<fill>`
-- Mean recovery time after failure: `<fill>`
+- Restart count (last 30 days): `<fill>`
+- Mean recovery time after failure: `<fill> sec`
+- Days with continuous runtime: `<fill>`
 
-## Quality
+## Quality Signals
 
-- Prompt/identity contamination incidents: `<fill>`
-- External lookup timeout rate: `<fill>%`
-- Avg AI response latency: `<fill> sec`
+- Persona-contamination incidents observed: `<fill>`
+- Average AI response latency: `<fill> sec`
+- Timeout/error events during tests: `<fill>`
 
-## Cost Control
+## Learning Outcomes
 
-- Approx monthly AI cost: `<fill>`
-- Approx cost per 100 messages: `<fill>`
-- Key cooldown / throttling incidents: `<fill>`
+- Main skills improved: `<fill>`
+- Main technical lesson from failures: `<fill>`
+- Next experiment target: `<fill>`

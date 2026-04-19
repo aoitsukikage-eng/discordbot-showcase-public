@@ -4,7 +4,7 @@
 
 - [ ] Confirm `.env` is not tracked.
 - [ ] Confirm no token or key in source.
-- [ ] Confirm no personal host paths hardcoded for production.
+- [ ] Confirm no personal host paths hardcoded in publishable code.
 - [ ] Confirm logs and pid files are excluded.
 
 Recommended local checks:

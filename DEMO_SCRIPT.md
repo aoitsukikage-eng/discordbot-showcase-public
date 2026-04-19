@@ -2,7 +2,7 @@
 
 ## 1) Setup Context (45 sec)
 
-- Explain that this is a public showcase of a private-production architecture.
+- Explain that this is a learning-focused and entertainment-oriented project.
 - Clarify the boundary: bot side is public, Engine core is private.
 
 ## 2) Architecture Walkthrough (90 sec)
@@ -19,7 +19,7 @@
 ## 4) Operational Readiness (90 sec)
 
 - Open `PUBLISH_CHECKLIST.md`.
-- Show security checks and deployment notes.
+- Show security checks and reproducibility notes.
 
 ## 5) Scenarios (90 sec)
 
@@ -28,5 +28,5 @@
 
 ## 6) Close (30 sec)
 
-- Emphasize reusable architecture and maintainability.
+- Emphasize learning outcomes, reusable architecture, and maintainability.
 - Point to `SHOWCASE_BRIEF.md` and `METRICS.md` for portfolio summarization.
