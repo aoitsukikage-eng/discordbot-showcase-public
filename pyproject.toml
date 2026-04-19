@@ -1,0 +1,18 @@
+[project]
+name = "discordbot-showcase-public"
+version = "0.1.0"
+description = "Public showcase repository for a multi-bot Discord architecture"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "discord.py>=2.7.1",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
