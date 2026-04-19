@@ -44,3 +44,14 @@ This repository does not publish:
 - key rotation logic
 - provider fallback strategy internals
 - private rate-limit heuristics
+
+## Key Placement Guidance
+
+- `DISCORD_BOT_TOKEN` belongs to this project's local `.env`.
+- AI provider keys should be stored in your private Engine environment/config.
+- Do not commit provider keys into this public repository.
+
+## Runtime Expectation
+
+- `ENGINE_MODE=mock`: no real provider key required.
+- `ENGINE_MODE=external`: user must provide private Engine integration and key loading.

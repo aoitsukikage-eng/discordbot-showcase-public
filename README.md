@@ -37,6 +37,25 @@ Not published in this repo:
 - Private Engine core implementation
 - Secrets, runtime logs, personal deployment details
 
+## Where To Put Keys
+
+This public repository only requires Discord bot runtime values in local `.env`.
+
+- `DISCORD_BOT_TOKEN` goes in this repo's `.env`.
+- AI provider keys do not go in this repo.
+- If you use `ENGINE_MODE=external`, put provider keys in your private Engine's env/config.
+
+This design keeps key-management logic private while still making the bot architecture explainable.
+
+## Runtime Modes
+
+- `ENGINE_MODE=mock`
+  - Runs without real AI provider calls.
+  - Best for code walkthrough, structure demo, and local testing.
+- `ENGINE_MODE=external`
+  - Expects your own private Engine integration.
+  - This repo will not expose or ship your provider key handling.
+
 ## Quick Start
 
 ```bash
@@ -51,9 +70,15 @@ pip install discord.py python-dotenv
 # 3) Prepare environment values
 cp .env.example .env
 
-# 4) Run the showcase entrypoint
+# 4) Run in mock mode (default, no real AI key needed)
 python src/bot_entrypoint.py
 ```
+
+To run with your own private Engine:
+
+1. Set `ENGINE_MODE=external` in `.env`.
+2. Set `ENGINE_PATH` and `ENGINE_API_ENV_FILE` to your private setup.
+3. Keep provider keys in that private Engine env/config, not in this public repo.
 
 ## Repository Layout
 
